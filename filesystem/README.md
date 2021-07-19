@@ -19,6 +19,8 @@ If using <a href="#directory">`Directory.Documents`</a> or
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
 
+Also It's not accesible on Android 10 unless the app enables legacy External Storage by adding `android:requestLegacyExternalStorage="true"` in the `application` tag in the `AndroidManifest.xml`. It's not accesible on Android 11 or newer.
+
 Read about [Setting Permissions](https://capacitorjs.com/docs/android/configuration#setting-permissions) in the [Android Guide](https://capacitorjs.com/docs/android) for more information on setting Android permissions.
 
 Note that <a href="#directory">`Directory.Documents`</a> and
